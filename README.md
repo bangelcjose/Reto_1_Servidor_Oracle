@@ -18,7 +18,6 @@ La máquina virtual actúa como **servidor** y el PC físico como **cliente**.
 
 ## 3. Arquitectura Cliente/Servidor
 
-![Arquitectura cliente/servidor](img/arquitectura.PNG)
 
 - **Motor**: ejecuta la base de datos.
 - **Listener**: recibe las conexiones de red (TCP 1521).
