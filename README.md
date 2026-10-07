@@ -18,7 +18,7 @@ La máquina virtual actúa como **servidor** y el PC físico como **cliente**.
 
 ## 3. Arquitectura Cliente/Servidor
 
-![Arquitectura cliente/servidor](img/arquitectura.png)
+![Arquitectura cliente/servidor](img/arquitectura.PNG)
 
 - **Motor**: ejecuta la base de datos.
 - **Listener**: recibe las conexiones de red (TCP 1521).
@@ -34,11 +34,10 @@ Antes de modificar el servidor se creó el snapshot `S1_Oracle_Previa` para pode
 
 Durante el asistente se configuraron la ruta de instalación (Oracle Home), el puerto del Listener (`TCP 1521`) y las credenciales administrativas (`SYS` / `SYSTEM`).
 
-> Las contraseñas **no se publican** en este repositorio. Solo se documenta que fueron configuradas.
 
 ### Evidencia 1 — Servicios Oracle tras la instalación
 
-![Evidencia 1 - Instalación](img/evidencia_01_instalacion.png)
+![Evidencia 1 - Instalación](img/Evidencia_01_instalacion.PNG)
 
 ## 6. Incidencia 1 — Caída local (ORA-12560)
 
@@ -53,11 +52,11 @@ Método: **observar → formular hipótesis → comprobar → solucionar → ver
 
 ### Evidencia 2 — Servicio detenido
 
-![Evidencia 2 - Servicio detenido](img/evidencia_02_servicio_detenido.png)
+![Evidencia 2 - Servicio detenido](img/evidencia_02_servicio_detenido.PNG)
 
 ### Evidencia 3 — Error ORA-12560
 
-![Evidencia 3 - ORA-12560](img/evidencia_03_ora12560.png)
+![Evidencia 3 - ORA-12560](img/evidencia_03_ora12560.PNG)
 
 ## 7. Incidencia 2 — El muro de red
 
@@ -72,7 +71,7 @@ Resultado: el `ping` responde pero el puerto 1521 falla → **conectividad IP no
 
 ### Evidencia 4 — Ping correcto y puerto bloqueado
 
-![Evidencia 4 - Puerto bloqueado](img/evidencia_04_puerto_bloqueado.png)
+![Evidencia 4 - Puerto bloqueado](img/evidencia_04_puerto_bloqueado.PNG)
 
 ## 8. Solución — Regla de Firewall TCP 1521
 
@@ -85,11 +84,11 @@ No se desactiva el Firewall: se crea **una excepción concreta**.
 
 ### Evidencia 5 — Regla de Firewall
 
-![Evidencia 5 - Regla de Firewall](img/evidencia_05_regla_firewall.png)
+![Evidencia 5 - Regla de Firewall](img/evidencia_05_regla_firewall.PNG)
 
 ### Evidencia 6 — Acceso desde el cliente funcionando
 
-![Evidencia 6 - Puerto abierto](img/evidencia_06_puerto_abierto.png)
+![Evidencia 6 - Puerto abierto](img/evidencia_06_puerto_abierto.PNG)
 
 ## 9. Snapshot final
 
@@ -97,7 +96,7 @@ Con la VM apagada correctamente se creó `S3_Oracle_Servidor_Red_OK`.
 
 ### Evidencia 7 — Snapshot
 
-![Evidencia 7 - Snapshot](img/evidencia_07_snapshot.png)
+![Evidencia 7 - Snapshot](img/evidencia_07_snapshot.PNG)
 
 ## 10. Resultado del reto
 
