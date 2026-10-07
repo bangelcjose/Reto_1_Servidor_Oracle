@@ -96,7 +96,7 @@ Con la VM apagada correctamente se creó `S3_Oracle_Servidor_Red_OK`.
 
 ### Evidencia 7 — Snapshot
 
-![Evidencia 7 - Snapshot](img/evidencia_07_snapshot.PNG)
+![Evidencia 7 - Snapshot](img/evidencia_07_Snapshot.PNG)
 
 ## 10. Resultado del reto
 
